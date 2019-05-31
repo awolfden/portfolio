@@ -12,6 +12,10 @@ html, body, ul, ol {
 }
 
 .navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
 
   color: $main;
   background-color: $secondary;
@@ -49,6 +53,10 @@ html, body, ul, ol {
   p {
     color: black;
     margin: 0 0 5px 15px;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 
   div.project_tiles {
@@ -92,7 +100,7 @@ html, body, ul, ol {
   }
   
   div {
-    margin: 50px;
+    margin: 30px 50px 50px 50px;
   }
 
   p {

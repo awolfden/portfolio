@@ -10,7 +10,7 @@ class Contact extends Component {
 
     render(){
         return(
-            <div className='contact'>
+            <div id='contact' className='contact'>
                 <div>
                     <h1>How to Find Me</h1>
                 </div>

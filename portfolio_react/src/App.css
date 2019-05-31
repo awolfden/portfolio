@@ -1,0 +1,115 @@
+html, body, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  height: 100%;
+}
+
+.navigation {
+  color: #35423b;
+  background-color: #DDD7D7;
+}
+.navigation h1 {
+  margin: 0px;
+}
+
+.animation {
+  display: flex;
+  color: #35423b;
+  height: 800px;
+}
+.animation h1 {
+  margin: 0px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  color: #35423b;
+  background-color: #DDD7D7;
+}
+.projects div.project_tiles {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 30px;
+}
+.projects div.project_tiles div.card {
+  border: 1px solid green;
+  height: 300px;
+  min-width: 400px;
+  padding: 5px;
+  margin: 15px;
+}
+.projects div.project_tiles div.card div.image {
+  background-color: green;
+  height: 150px;
+  width: 390px;
+}
+.projects div.project_tiles div.card div.description {
+  background-color: blue;
+  height: 140px;
+  width: 390px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  color: #35423b;
+}
+.about h1 {
+  padding: 15px 15px 0px 15px;
+  margin-bottom: 0px;
+}
+.about div {
+  margin: 50px;
+}
+.about p {
+  margin: 16px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  color: #35423b;
+  height: 400px;
+  background-color: #DDD7D7;
+}
+.contact .contact_div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.contact h1 {
+  padding: 15px;
+}
+.contact h3 {
+  padding: 8px 0 8px 0;
+}
+.contact .contact_info {
+  width: 33%;
+  padding: 15px;
+}
+.contact .contact_info p {
+  margin: 8px;
+  color: black;
+}
+.contact .websites {
+  width: 33%;
+  padding: 70px 0 10px 0;
+}
+.contact .websites a {
+  color: black;
+  text-decoration: none;
+}
+.contact img {
+  position: relative;
+  bottom: 40px;
+  max-height: 314px;
+  max-width: 400px;
+}
+
+/*# sourceMappingURL=App.css.map */

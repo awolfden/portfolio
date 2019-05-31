@@ -30,6 +30,18 @@ html, body, ul, ol {
   color: #35423b;
   background-color: #DDD7D7;
 }
+.projects h1 {
+  padding: 15px 15px 0px 15px;
+  margin-bottom: 0px;
+}
+.projects h4 {
+  color: black;
+  margin-left: 15px;
+}
+.projects p {
+  color: black;
+  margin: 0 0 5px 15px;
+}
 .projects div.project_tiles {
   display: flex;
   justify-content: space-evenly;
@@ -38,19 +50,16 @@ html, body, ul, ol {
   padding: 30px;
 }
 .projects div.project_tiles div.card {
-  border: 1px solid green;
   height: 300px;
   min-width: 400px;
   padding: 5px;
   margin: 15px;
 }
 .projects div.project_tiles div.card div.image {
-  background-color: green;
   height: 150px;
   width: 390px;
 }
 .projects div.project_tiles div.card div.description {
-  background-color: blue;
   height: 140px;
   width: 390px;
 }
@@ -91,7 +100,11 @@ html, body, ul, ol {
 }
 .contact .contact_info {
   width: 33%;
+  min-width: 290px;
   padding: 15px;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 .contact .contact_info p {
   margin: 8px;
@@ -99,7 +112,11 @@ html, body, ul, ol {
 }
 .contact .websites {
   width: 33%;
-  padding: 70px 0 10px 0;
+  min-width: 290px;
+  padding: 70px 0 10px 20px;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 .contact .websites a {
   color: black;

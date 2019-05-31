@@ -34,8 +34,22 @@ html, body, ul, ol {
   display: flex;
   flex-direction: column;
   color: $main;
-  //height: 500px;
   background-color: $secondary;
+  
+  h1 {
+    padding: 15px 15px 0px 15px ;
+    margin-bottom: 0px;
+  }
+
+  h4 {
+    color: black;
+    margin-left: 15px;
+  }
+
+  p {
+    color: black;
+    margin: 0 0 5px 15px;
+  }
 
   div.project_tiles {
     display: flex;
@@ -47,7 +61,6 @@ html, body, ul, ol {
   
 
   div.project_tiles div.card {
-    border: 1px solid green;
     height: 300px;
     min-width: 400px;
     padding: 5px;
@@ -55,13 +68,13 @@ html, body, ul, ol {
   }
 
   div.project_tiles div.card div.image {
-    background-color: green;
+    
     height: 150px;
     width: 390px;
     
   }
   div.project_tiles div.card div.description {
-    background-color: blue;
+    
     height: 140px;
     width: 390px;
     
@@ -110,8 +123,11 @@ html, body, ul, ol {
 
   .contact_info {
     width: 33%;
+    min-width: 290px;
     padding: 15px;
-  
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 40px;
   }
 
   .contact_info p {
@@ -121,7 +137,11 @@ html, body, ul, ol {
 
   .websites {
     width: 33%;
-    padding: 70px 0 10px 0;
+    min-width: 290px;
+    padding: 70px 0 10px 20px;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 40px;
     
     a {
       color: black;

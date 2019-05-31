@@ -11,7 +11,7 @@ class Animation extends Component {
     render(){
         return(
             <div className='animation'>
-                <h1>Animation</h1>
+                
             </div>
         )
     }

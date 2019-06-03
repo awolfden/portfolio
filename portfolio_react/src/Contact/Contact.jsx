@@ -22,12 +22,11 @@ class Contact extends Component {
                         <p>Denver, Co 80223</p>
                     </div>
                     <div className='websites'>
-                        <a href='www.adamwolfman.com' target="_blank">adamwolfman.com</a><br/>
-                        <a href='awolfmil@gmail.com' target="_blank">awolfmil@gmail.com</a><br/>
-                        <a href='www.github.com/awolfden' target="_blank">github.com/awolfden</a><br/>
-                        <a href='www.linkedin.com/in/adamwolfman' target="_blank">linkedin.com/in/adamwolfman</a><br/>
-                        <a href='https://twitter.com/adam_wolfman' target="_blank">twitter.com/adam_wolfman</a><br/>
-                        <a href='https://www.facebook.com/adamwolfman' target="_blank">facebook.com/adamwolfman</a>
+                        <a href='mailto:awolfmil@gmail.com'>awolfmil@gmail.com</a><br/>
+                        <a target="_blank" rel="noopener noreferrer" href='https://github.com/awolfden'>github.com/awolfden</a><br/>
+                        <a target="_blank" rel="noopener noreferrer" href='https://linkedin.com/in/adamwolfman'>linkedin.com/in/adamwolfman</a><br/>
+                        <a target="_blank" rel="noopener noreferrer" href='https://twitter.com/adam_wolfman'>twitter.com/adam_wolfman</a><br/>
+                        <a target="_blank" rel="noopener noreferrer" href='https://www.facebook.com/adamwolfman'>facebook.com/adamwolfman</a>
                     </div>
                 
                     <img src={require('../images/denver_map.png')} alt="map"/>

@@ -2,10 +2,12 @@
 $main: rgb(53, 66, 59);
 $secondary: #DDD7D7;
 $nav: rgba(221, 215, 215, 0.295);
+$fontPrimary:'PT Mono', monospace;
 
 html, body, ul, ol {
   margin:  0;
   padding: 0;
+  
 }
 
 .App {
@@ -22,6 +24,7 @@ html, body, ul, ol {
   
   a {
     font-size: 25px;
+    font-family: $fontPrimary;
   }
 }
 
@@ -56,11 +59,13 @@ html, body, ul, ol {
     padding: 15px 15px 0px 15px ;
     margin-bottom: 0px;
     font-size: 25px;
+    font-family: $fontPrimary;
   }
 
   h4 {
     color: black;
     margin: 8px 0 0 15px;
+    font-family: $fontPrimary;
   }
 
   p {
@@ -68,6 +73,7 @@ html, body, ul, ol {
     margin: 10px;
     font-size: 12px;
     line-height: 100%;
+    font-family: $fontPrimary;
   }
 
   a:hover {
@@ -113,6 +119,8 @@ html, body, ul, ol {
   h1 {
     padding: 15px 15px 0px 15px ;
     margin-bottom: 0px;
+    font-family: $fontPrimary;
+    font-size: 25px;
   }
   
   div {
@@ -121,6 +129,7 @@ html, body, ul, ol {
 
   p {
     margin: 16px;
+    font-family: $fontPrimary;
   }
 }
 
@@ -130,6 +139,7 @@ html, body, ul, ol {
   color: $main;
   height: 400px;
   background-color: $secondary;
+  font-family: $fontPrimary;
 
   .contact_div {
     display: flex;

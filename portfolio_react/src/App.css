@@ -15,6 +15,7 @@ html, body, ul, ol {
 }
 .navigation a {
   font-size: 25px;
+  font-family: "PT Mono", monospace;
 }
 
 .animation {
@@ -43,16 +44,19 @@ html, body, ul, ol {
   padding: 15px 15px 0px 15px;
   margin-bottom: 0px;
   font-size: 25px;
+  font-family: "PT Mono", monospace;
 }
 .projects h4 {
   color: black;
   margin: 8px 0 0 15px;
+  font-family: "PT Mono", monospace;
 }
 .projects p {
   color: black;
   margin: 10px;
   font-size: 12px;
   line-height: 100%;
+  font-family: "PT Mono", monospace;
 }
 .projects a:hover {
   text-decoration: none;
@@ -90,12 +94,15 @@ html, body, ul, ol {
 .about h1 {
   padding: 15px 15px 0px 15px;
   margin-bottom: 0px;
+  font-family: "PT Mono", monospace;
+  font-size: 25px;
 }
 .about div {
   margin: 30px 50px 50px 50px;
 }
 .about p {
   margin: 16px;
+  font-family: "PT Mono", monospace;
 }
 
 .contact {
@@ -104,6 +111,7 @@ html, body, ul, ol {
   color: #35423b;
   height: 400px;
   background-color: #DDD7D7;
+  font-family: "PT Mono", monospace;
 }
 .contact .contact_div {
   display: flex;

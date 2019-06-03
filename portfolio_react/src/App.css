@@ -4,47 +4,55 @@ html, body, ul, ol {
 }
 
 .App {
-  height: 100%;
+  height: 80%;
 }
 
 .navigation {
-  position: fixed;
-  top: 0;
   width: 100%;
   z-index: 5;
   color: #35423b;
   background-color: #DDD7D7;
 }
-.navigation h1 {
-  margin: 0px;
+.navigation a {
+  font-size: 25px;
 }
 
 .animation {
   display: flex;
+  justify-content: center;
   color: #35423b;
-  height: 800px;
+  height: 600px;
 }
-.animation h1 {
-  margin: 0px;
+.animation div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.animation svg {
+  width: 50%;
 }
 
 .projects {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   color: #35423b;
   background-color: #DDD7D7;
 }
 .projects h1 {
   padding: 15px 15px 0px 15px;
   margin-bottom: 0px;
+  font-size: 25px;
 }
 .projects h4 {
   color: black;
-  margin-left: 15px;
+  margin: 8px 0 0 15px;
 }
 .projects p {
   color: black;
-  margin: 0 0 5px 15px;
+  margin: 10px;
+  font-size: 12px;
+  line-height: 100%;
 }
 .projects a:hover {
   text-decoration: none;
@@ -57,18 +65,21 @@ html, body, ul, ol {
   padding: 30px;
 }
 .projects div.project_tiles div.card {
-  height: 300px;
-  min-width: 400px;
+  height: 200px;
+  min-width: 200px;
   padding: 5px;
   margin: 15px;
 }
 .projects div.project_tiles div.card div.image {
-  height: 150px;
-  width: 390px;
+  height: 75px;
+  width: 200px;
+}
+.projects img {
+  height: 70px;
 }
 .projects div.project_tiles div.card div.description {
-  height: 140px;
-  width: 390px;
+  height: 100px;
+  width: 300px;
 }
 
 .about {

@@ -22,10 +22,10 @@ class Contact extends Component {
                         <p>Denver, Co 80223</p>
                     </div>
                     <div className='websites'>
-                        <a href='#'>adamwolfman.com</a><br/>
-                        <a href='#'>awolfmil@gmail.com</a><br/>
-                        <a href='#'>github.com/awolfden</a><br/>
-                        <a href='#'>linkedin.com/in/adamwolfman</a>
+                        <a href='www.adamwolfman.com' target="_blank">adamwolfman.com</a><br/>
+                        <a href='awolfmil@gmail.com' target="_blank">awolfmil@gmail.com</a><br/>
+                        <a href='www.github.com/awolfden' target="_blank">github.com/awolfden</a><br/>
+                        <a href='www.linkedin.com/in/adamwolfman' target="_blank">linkedin.com/in/adamwolfman</a>
                     </div>
                 
                     <img src={require('../images/denver_map.png')} alt="map"/>

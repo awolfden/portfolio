@@ -1,6 +1,7 @@
 
 $main: rgb(53, 66, 59);
 $secondary: #DDD7D7;
+$nav: rgba(221, 215, 215, 0.295);
 
 html, body, ul, ol {
   margin:  0;
@@ -8,51 +9,65 @@ html, body, ul, ol {
 }
 
 .App {
-  height: 100%;
+  height: 80%;
 }
 
 .navigation {
-  position: fixed;
-  top: 0;
+  // position: fixed;
+  // top: 0;
   width: 100%;
   z-index: 5;
-
   color: $main;
   background-color: $secondary;
-  h1 {
-    margin: 0px;
+  
+  a {
+    font-size: 25px;
   }
 }
 
 .animation {
   display: flex;
+  justify-content: center;
   color: $main;
-  height: 800px;
+  height: 600px;
 
-  h1 {
-    margin: 0px;
+
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
   }
+
+  svg {
+    width: 50%;  
+  }
+
 }
 
 .projects {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   color: $main;
   background-color: $secondary;
   
   h1 {
     padding: 15px 15px 0px 15px ;
     margin-bottom: 0px;
+    font-size: 25px;
   }
 
   h4 {
     color: black;
-    margin-left: 15px;
+    margin: 8px 0 0 15px;
   }
 
   p {
     color: black;
-    margin: 0 0 5px 15px;
+    margin: 10px;
+    font-size: 12px;
+    line-height: 100%;
   }
 
   a:hover {
@@ -69,23 +84,24 @@ html, body, ul, ol {
   
 
   div.project_tiles div.card {
-    height: 300px;
-    min-width: 400px;
+    height: 200px;
+    min-width: 200px;
     padding: 5px;
     margin: 15px;
   }
 
   div.project_tiles div.card div.image {
-    
-    height: 150px;
-    width: 390px;
-    
+    height: 75px;
+    width: 200px;
   }
-  div.project_tiles div.card div.description {
-    
-    height: 140px;
-    width: 390px;
-    
+
+  img {
+    height: 70px;
+  }
+
+  div.project_tiles div.card div.description {  
+    height: 100px;
+    width: 300px;
   }
 }
 

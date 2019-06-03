@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
 
 class Projects extends Component {
     constructor(){
@@ -15,7 +14,7 @@ class Projects extends Component {
                 <h1>Stuff I Made</h1>
                 <div className='project_tiles'>
                     <div className='card'>
-                        <a href="#">
+                        <a href="https://inhiit.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                         <div className='image'><img src={require('../images/inHiit.png')} alt="inHiit"/></div>
                         <div className='description'>
                             <h4>inHIIT</h4>
@@ -26,7 +25,7 @@ class Projects extends Component {
                         </a>
                     </div>
                     <div className='card'>
-                        <a href="#">
+                        <a href="https://savrapp.herokuapp.com/auth/login" target="_blank" rel="noopener noreferrer">
                         <div className='image'><img src={require('../images/SAVR.png')} alt="SAVR"/></div>
                         <div className='description'>
                         <h4>SAVR</h4>
@@ -37,10 +36,10 @@ class Projects extends Component {
                         </a>
                     </div>
                     <div className='card'>
-                        <a href="#">
+                        <a href="https://awolfden.github.io/escape_from_syndrome_island/" target="_blank" rel="noopener noreferrer">
                         <div className='image'><img src={require('../images/Syndrome.png')} alt="SAVR"/></div>
                         <div className='description'>
-                        <h4>Escape from Syndrome Island</h4>
+                        <h4>Syndrome Island</h4>
                             <p>Incredibles Shooter Game</p>
                             <p>jQuery Browser Point and Click Shooter</p>
                             <p>Must Shoot Down All Incredibles To Win</p>
@@ -48,7 +47,7 @@ class Projects extends Component {
                         </a>
                     </div>
                     <div className='card'>
-                        <a href="#">
+                        <a href="https://inhiitfrontend.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                         <div className='image'><img src={require('../images/inHiit.png')} alt="inHiit"/></div>
                         <div className='description'>
                         <h4>inHIIT Java</h4>

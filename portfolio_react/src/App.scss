@@ -99,6 +99,7 @@ html, body, ul, ol {
     min-width: 200px;
     padding: 5px;
     margin: 15px;
+    box-shadow: 8px 8px 10px  rgba(0, 0, 0, 0.2);
   }
 
   div.project_tiles div.card div.image {
@@ -142,7 +143,6 @@ html, body, ul, ol {
   display: flex;
   flex-direction: column;
   color: $main;
-  //height: 400px;
   background-color: $secondary;
   font-family: $fontPrimary;
 
@@ -198,8 +198,27 @@ html, body, ul, ol {
     max-width: 400px;
     
   }
-
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $secondary;
+    clip-path: polygon(100% 0%, 0 100%, 100% 100%);
+    height: 100px;
+    overflow: hidden;
+    
+
+    img {
+      position: relative;
+      left: 400px;
+      bottom: 15px;
+      height: 190px;
+      opacity: .3;
+    }
+}
+
 .draw {
   stroke: black;
   stroke-width: 2px;
@@ -218,9 +237,6 @@ html, body, ul, ol {
     stroke-dashoffset: -2000;
     
   }
-  
-
-  
   100% {
     stroke-dashoffset: 0;
     
@@ -243,7 +259,6 @@ html, body, ul, ol {
   75% {
     opacity: .5;
   }
-
   100% {
     opacity: 1;
   }
@@ -255,8 +270,9 @@ html, body, ul, ol {
 
 .shrink {
   animation-name: shrink;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-iteration-count: 1;
+  
 }
 
 @keyframes shrink {
@@ -264,12 +280,58 @@ html, body, ul, ol {
     transform: scale(1.8);
     position: relative;
     top: 225px;
+    stroke: cyan;
+  }
+  5% {
+    stroke: cyan;
   }
   
   100% {
     transform: scale(1);
     position: relative;
     top: 0;
+    stroke: black;
+  }
+}
+
+.sway {
+  animation-name: sway;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(0deg);
     
+  }
+  33% {
+    transform: rotate(2deg);
+    stroke: cyan;
+  }
+  66% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+    stroke: black;
+  }
+}
+
+.grow {
+  animation-name: grow;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  transform: scale(1.2);
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
   }
 }

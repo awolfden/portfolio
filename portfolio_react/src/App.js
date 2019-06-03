@@ -5,6 +5,7 @@ import Animation from './Animation/Animation';
 import Projects from './Projects/Projects';
 import About from './About/About';
 import Contact from './Contact/Contact';
+import Footer from './Footer/Footer';
 
 
 
@@ -26,6 +27,7 @@ class App extends Component {
         <Projects/>
         <About/>
         <Contact/>
+        <Footer/>
       </div>
     )
   }

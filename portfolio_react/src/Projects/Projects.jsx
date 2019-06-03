@@ -8,12 +8,20 @@ class Projects extends Component {
         }
     }
 
+    grow = (e) => {
+        e.currentTarget.classList.add('grow');
+    }
+
+    normalize = (e) => {
+        e.target.classList.remove('grow');
+    }
+
     render(){
         return(
             <div id='projects' className='projects'>
                 <h1>Stuff I Made</h1>
                 <div className='project_tiles'>
-                    <div className='card'>
+                    <div className='card' onMouseEnter={this.grow} onMouseLeave={this.normalize}>
                         <a target="_blank" rel="noopener noreferrer" href="https://inhiit.herokuapp.com/">
                         <div className='image'><img src={require('../images/inHiit.png')} alt="inHiit"/></div>
                         <div className='description'>
@@ -24,7 +32,7 @@ class Projects extends Component {
                         </div>
                         </a>
                     </div>
-                    <div className='card'>
+                    <div className='card' onMouseEnter={this.grow} onMouseLeave={this.normalize}>
                         <a target="_blank" rel="noopener noreferrer" href="https://savrapp.herokuapp.com/auth/login">
                         <div className='image'><img src={require('../images/SAVR.png')} alt="SAVR"/></div>
                         <div className='description'>
@@ -35,7 +43,7 @@ class Projects extends Component {
                         </div>
                         </a>
                     </div>
-                    <div className='card'>
+                    <div className='card' onMouseEnter={this.grow} onMouseLeave={this.normalize}>
                         <a target="_blank" rel="noopener noreferrer" href="https://awolfden.github.io/escape_from_syndrome_island/">
                         <div className='image'><img src={require('../images/Syndrome.png')} alt="SAVR"/></div>
                         <div className='description'>
@@ -46,7 +54,7 @@ class Projects extends Component {
                         </div>
                         </a>
                     </div>
-                    <div className='card'>
+                    <div className='card' onMouseEnter={this.grow} onMouseLeave={this.normalize}>
                         <a target="_blank" rel="noopener noreferrer" href="https://inhiitfrontend.herokuapp.com/">
                         <div className='image'><img src={require('../images/inHiit.png')} alt="inHiit"/></div>
                         <div className='description'>

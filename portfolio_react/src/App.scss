@@ -29,7 +29,13 @@ html, body, ul, ol {
   }
 }
 
+.lightning {
+  background-image: url('./images/lightning.gif');
+  background-size: cover;
+}
+
 .animation {
+  
   display: flex;
   justify-content: center;
   color: $main;

@@ -20,6 +20,10 @@ class Animation extends Component {
             document.getElementById('layer3').classList.remove('hidden');
             document.getElementById('svg').classList.remove('bigLogo');
             document.getElementById('svg').classList.add('shrink');
+
+            const element = document.getElementById('animation');            
+            element.classList.add('lightning');
+
             this.setState({
                 hasDrawn: true
             });
@@ -42,7 +46,7 @@ class Animation extends Component {
 
     render(){
         return(
-            <div className='animation'>
+            <div id='animation' className='animation'>
                 <div className='svg_container'>                    
                     <svg id="svg" className="bigLogo" xmlns="http://www.w3.org/2000/svg" viewBox="-15 0 1825 1412.7">
                         <g onMouseEnter={this.sway}  id="layer9" className="hidden" data-name="Layer 9">

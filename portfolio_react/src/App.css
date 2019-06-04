@@ -21,6 +21,11 @@ html, body, ul, ol {
   font-size: 18px;
 }
 
+.lightning {
+  background-image: url("./images/lightning.gif");
+  background-size: cover;
+}
+
 .animation {
   display: flex;
   justify-content: center;

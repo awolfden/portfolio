@@ -374,3 +374,18 @@ html, body, ul, ol {
   }
 
 }
+
+.normalize {
+  animation-name: normalize;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes normalize {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

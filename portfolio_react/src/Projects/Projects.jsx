@@ -9,11 +9,13 @@ class Projects extends Component {
     }
 
     grow = (e) => {
+        e.currentTarget.classList.remove('normalize');
         e.currentTarget.classList.add('grow');
     }
 
     normalize = (e) => {
-        e.target.classList.remove('grow');
+        e.currentTarget.classList.remove('grow');
+        e.currentTarget.classList.add('normalize');
     }
 
     render(){

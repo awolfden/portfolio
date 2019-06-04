@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.087e5039.chunk.css",
-    "main.js": "/static/js/main.af8c77c4.chunk.js",
-    "main.js.map": "/static/js/main.af8c77c4.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/css/2.266e55a5.chunk.css": "/static/css/2.266e55a5.chunk.css",
-    "static/js/2.9204fcdc.chunk.js": "/static/js/2.9204fcdc.chunk.js",
-    "static/js/2.9204fcdc.chunk.js.map": "/static/js/2.9204fcdc.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.7f3e07fb6520587bbcfae9d348f487d6.js": "/precache-manifest.7f3e07fb6520587bbcfae9d348f487d6.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.266e55a5.chunk.css.map": "/static/css/2.266e55a5.chunk.css.map",
-    "static/css/main.087e5039.chunk.css.map": "/static/css/main.087e5039.chunk.css.map",
-    "static/media/SAVR.png": "/static/media/SAVR.2c47ebbc.png",
-    "static/media/Syndrome.png": "/static/media/Syndrome.ee142dda.png",
-    "static/media/denver_map.png": "/static/media/denver_map.8ecfbb87.png",
-    "static/media/inHiit.png": "/static/media/inHiit.49ab1a76.png"
+    "main.css": "/portfolio/static/css/main.087e5039.chunk.css",
+    "main.js": "/portfolio/static/js/main.5bff449a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.5bff449a.chunk.js.map",
+    "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
+    "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
+    "static/css/2.266e55a5.chunk.css": "/portfolio/static/css/2.266e55a5.chunk.css",
+    "static/js/2.9204fcdc.chunk.js": "/portfolio/static/js/2.9204fcdc.chunk.js",
+    "static/js/2.9204fcdc.chunk.js.map": "/portfolio/static/js/2.9204fcdc.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.cf46c8475831be87cea4eba1ae878a06.js": "/portfolio/precache-manifest.cf46c8475831be87cea4eba1ae878a06.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/2.266e55a5.chunk.css.map": "/portfolio/static/css/2.266e55a5.chunk.css.map",
+    "static/css/main.087e5039.chunk.css.map": "/portfolio/static/css/main.087e5039.chunk.css.map",
+    "static/media/SAVR.png": "/portfolio/static/media/SAVR.2c47ebbc.png",
+    "static/media/Syndrome.png": "/portfolio/static/media/Syndrome.ee142dda.png",
+    "static/media/denver_map.png": "/portfolio/static/media/denver_map.8ecfbb87.png",
+    "static/media/inHiit.png": "/portfolio/static/media/inHiit.49ab1a76.png"
   }
 }

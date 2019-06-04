@@ -315,6 +315,15 @@ html, body, ul, ol {
     margin-top: 35px;
   }
 }
+@media (max-width: 375px) {
+  .navigation a {
+    font-size: 17px;
+  }
+
+  svg {
+    max-width: 375px;
+  }
+}
 .normalize {
   animation-name: normalize;
   animation-duration: 0.5s;

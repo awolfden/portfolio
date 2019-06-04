@@ -36,11 +36,12 @@ html, body, ul, ol {
 }
 .animation svg {
   width: 50%;
+  padding: 10px;
 }
 .animation svg.bigLogo {
-  transform: scale(1.8);
+  transform: scale(1.9);
   position: relative;
-  top: 225px;
+  top: 200px;
 }
 
 .projects {
@@ -143,6 +144,7 @@ html, body, ul, ol {
   background-color: white;
   margin-top: 30px;
   margin-bottom: 40px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
 }
 .contact .contact_info p {
   margin: 8px;
@@ -155,6 +157,7 @@ html, body, ul, ol {
   background-color: white;
   margin-top: 30px;
   margin-bottom: 40px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
 }
 .contact .websites a {
   color: black;
@@ -165,6 +168,7 @@ html, body, ul, ol {
   bottom: 40px;
   max-height: 314px;
   max-width: 400px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
 }
 
 .footer {
@@ -243,10 +247,11 @@ html, body, ul, ol {
 
 @keyframes shrink {
   0% {
-    transform: scale(1.8);
+    transform: scale(1.9);
     position: relative;
-    top: 225px;
+    top: 200px;
     stroke: cyan;
+    fill: #00ffbf;
   }
   5% {
     stroke: cyan;
@@ -268,6 +273,7 @@ html, body, ul, ol {
   20% {
     transform: skew(1deg, 0deg);
     stroke: cyan;
+    fill: #00ffbf;
   }
   50% {
     transform: skew(-1deg, 0deg);
@@ -298,9 +304,10 @@ html, body, ul, ol {
 @media (max-width: 839px) {
   div.contact_div div.websites {
     padding: 20px 10px;
+    margin-top: -5px;
   }
   div.contact_div img {
-    margin-top: 30px;
+    margin-top: 35px;
   }
 }
 

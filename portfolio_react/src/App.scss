@@ -24,6 +24,9 @@ html, body, ul, ol {
     font-size: 25px;
     font-family: $fontPrimary;
   }
+  a.nav-link {
+    font-size: 18px;
+  }
 }
 
 .animation {
@@ -193,7 +196,6 @@ html, body, ul, ol {
   img {
     position: relative;
     bottom: 40px;
-    
     max-height: 314px;
     max-width: 400px;
     
@@ -204,18 +206,24 @@ html, body, ul, ol {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: $secondary;
-    clip-path: polygon(100% 0%, 0 100%, 100% 100%);
     height: 100px;
     overflow: hidden;
-    
+    z-index: -1;
+  
+    .right {
+      background-color: $secondary;
+      clip-path: polygon(100% 0%, 0 100%, 100% 100%);
+      width: 100%;
+      z-index: 1;
+    }
 
     img {
       position: relative;
-      left: 400px;
+      left: 70%;
       bottom: 15px;
       height: 190px;
       opacity: .3;
+      z-index: 2;
     }
 }
 
@@ -296,26 +304,29 @@ html, body, ul, ol {
 
 .sway {
   animation-name: sway;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-iteration-count: 1;
   
 }
 
+
 @keyframes sway {
-  0% {
-    transform: rotate(0deg);
+  20% {
+    transform: skew(1deg, 0deg);
+    stroke: cyan;
     
   }
-  33% {
-    transform: rotate(2deg);
-    stroke: cyan;
+  50% {
+    transform: skew(-1deg, 0deg);
+    
+    
   }
-  66% {
-    transform: rotate(-2deg);
+  75% {
+    transform: skew(1deg, 0deg);
+    
   }
   100% {
-    transform: rotate(0deg);
-    transform-origin: 50% 50%;
+    transform: skew(0deg, 0deg);
     stroke: black;
   }
 }
@@ -334,4 +345,20 @@ html, body, ul, ol {
   100% {
     transform: scale(1.2);
   }
+}
+
+@media (max-width: 839px) {
+  div.contact_div {
+    
+    
+
+    div.websites {
+      padding: 20px 10px;
+      
+    }
+    img {
+      margin-top: 30px;
+    }
+  }
+
 }

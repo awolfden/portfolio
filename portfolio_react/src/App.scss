@@ -70,6 +70,10 @@ html, body, ul, ol {
   justify-content: center;
   color: $main;
   background-color: $secondary;
+
+  div.fadeAway {
+    opacity: 0.3;
+  }
   
   h1 {
     padding: 15px 15px 0px 15px ;
@@ -117,6 +121,8 @@ html, body, ul, ol {
     height: 75px;
     width: 200px;
   }
+
+ 
 
   img {
     height: 70px;
@@ -372,7 +378,6 @@ html, body, ul, ol {
       margin-top: 35px;
     }
   }
-
 }
 
 @media (max-width: 375px) {

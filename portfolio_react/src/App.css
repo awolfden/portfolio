@@ -56,6 +56,9 @@ html, body, ul, ol {
   color: #35423b;
   background-color: #DDD7D7;
 }
+.projects div.fadeAway {
+  opacity: 0.3;
+}
 .projects h1 {
   padding: 15px 15px 0px 15px;
   margin-bottom: 0px;

@@ -1,0 +1,14 @@
+.navigation {
+    width: 100%;
+    z-index: 5;
+    color: $main;
+    background-color: $secondary;
+    
+    a {
+      font-size: 25px;
+      font-family: $fontPrimary;
+    }
+    a.nav-link {
+      font-size: 18px;
+    }
+  }

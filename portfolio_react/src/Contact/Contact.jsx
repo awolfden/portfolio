@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Pdf from '../images/resume.pdf';
 
 class Contact extends Component {
     constructor(){
@@ -24,6 +25,7 @@ class Contact extends Component {
                     <div className='websites'>
                         <a href='mailto:awolfmil@gmail.com'>awolfmil@gmail.com</a><br/>
                         <a target="_blank" rel="noopener noreferrer" href='https://github.com/awolfden'>github.com/awolfden</a><br/>
+                        <a target="_blank" rel="noopener noreferrer" href={Pdf}>download resume</a><br/>
                         <a target="_blank" rel="noopener noreferrer" href='https://linkedin.com/in/adamwolfman'>linkedin.com/in/adamwolfman</a><br/>
                         <a target="_blank" rel="noopener noreferrer" href='https://twitter.com/adam_wolfman'>twitter.com/adam_wolfman</a><br/>
                         <a target="_blank" rel="noopener noreferrer" href='https://www.facebook.com/adamwolfman'>facebook.com/adamwolfman</a>

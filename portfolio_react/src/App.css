@@ -1,12 +1,3 @@
-html, body, ul, ol {
-  margin: 0;
-  padding: 0;
-}
-
-.App {
-  height: 80%;
-}
-
 .navigation {
   width: 100%;
   z-index: 5;
@@ -49,6 +40,98 @@ html, body, ul, ol {
   top: 200px;
 }
 
+.draw {
+  stroke: black;
+  stroke-width: 2px;
+  stroke-dashOffset: -2000;
+  stroke-dasharray: 2000;
+  animation-name: draw;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-direction: forwards;
+  animation-timing-function: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: -2000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.fadeIn {
+  animation-name: fade;
+  animation-duration: 4.3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.hidden {
+  visibility: hidden;
+}
+
+.shrink {
+  animation-name: shrink;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1.9);
+    position: relative;
+    top: 200px;
+    stroke: cyan;
+    fill: #00ffbf;
+  }
+  5% {
+    stroke: cyan;
+  }
+  100% {
+    transform: scale(1);
+    position: relative;
+    top: 0;
+    stroke: black;
+  }
+}
+.sway {
+  animation-name: sway;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes sway {
+  20% {
+    transform: skew(1deg, 0deg);
+    stroke: cyan;
+    fill: #00ffbf;
+  }
+  50% {
+    transform: skew(-1deg, 0deg);
+  }
+  75% {
+    transform: skew(1deg, 0deg);
+  }
+  100% {
+    transform: skew(0deg, 0deg);
+    stroke: black;
+  }
+}
 .projects {
   display: flex;
   flex-direction: column;
@@ -106,6 +189,36 @@ html, body, ul, ol {
   width: 300px;
 }
 
+.grow {
+  animation-name: grow;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transform: scale(1.3);
+  box-shadow: 2px 2px 2px 2px rgba(0, 255, 191, 0.1) !important;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+.normalize {
+  animation-name: normalize;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes normalize {
+  0% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .about {
   display: flex;
   flex-direction: column;
@@ -205,114 +318,15 @@ html, body, ul, ol {
   z-index: 2;
 }
 
-.draw {
-  stroke: black;
-  stroke-width: 2px;
-  stroke-dashOffset: -2000;
-  stroke-dasharray: 2000;
-  animation-name: draw;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  animation-direction: forwards;
-  animation-timing-function: normal;
-  animation-fill-mode: forwards;
+html, body, ul, ol {
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes draw {
-  0% {
-    stroke-dashoffset: -2000;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-.fadeIn {
-  animation-name: fade;
-  animation-duration: 4.3s;
-  animation-iteration-count: 1;
+.App {
+  height: 80%;
 }
 
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.hidden {
-  visibility: hidden;
-}
-
-.shrink {
-  animation-name: shrink;
-  animation-duration: 1.5s;
-  animation-iteration-count: 1;
-}
-
-@keyframes shrink {
-  0% {
-    transform: scale(1.9);
-    position: relative;
-    top: 200px;
-    stroke: cyan;
-    fill: #00ffbf;
-  }
-  5% {
-    stroke: cyan;
-  }
-  100% {
-    transform: scale(1);
-    position: relative;
-    top: 0;
-    stroke: black;
-  }
-}
-.sway {
-  animation-name: sway;
-  animation-duration: 1.5s;
-  animation-iteration-count: 1;
-}
-
-@keyframes sway {
-  20% {
-    transform: skew(1deg, 0deg);
-    stroke: cyan;
-    fill: #00ffbf;
-  }
-  50% {
-    transform: skew(-1deg, 0deg);
-  }
-  75% {
-    transform: skew(1deg, 0deg);
-  }
-  100% {
-    transform: skew(0deg, 0deg);
-    stroke: black;
-  }
-}
-.grow {
-  animation-name: grow;
-  animation-duration: 0.5s;
-  animation-iteration-count: 1;
-  transform: scale(1.3);
-  box-shadow: 2px 2px 2px 2px rgba(0, 255, 191, 0.1) !important;
-}
-
-@keyframes grow {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.3);
-  }
-}
 @media (max-width: 839px) {
   div.contact_div div.websites {
     padding: 20px 10px;
@@ -329,20 +343,6 @@ html, body, ul, ol {
 
   svg {
     max-width: 375px;
-  }
-}
-.normalize {
-  animation-name: normalize;
-  animation-duration: 0.5s;
-  animation-iteration-count: 1;
-}
-
-@keyframes normalize {
-  0% {
-    transform: scale(1.3);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 

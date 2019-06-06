@@ -1,0 +1,22 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    color: $main;
+  
+    h1 {
+      padding: 15px 15px 0px 15px ;
+      margin-bottom: 0px;
+      font-family: $fontPrimary;
+      font-size: 25px;
+    }
+    
+    div {
+      margin: 30px 50px 50px 50px;
+    }
+  
+    p {
+      margin: 16px;
+      font-family: $fontPrimary;
+    }
+  
+  }

@@ -1,0 +1,64 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    color: $main;
+    background-color: $secondary;
+    font-family: $fontPrimary;
+  
+    a:hover {
+      color: rgb(23, 107, 107) !important;
+    }
+    .contact_div {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+  
+    h1 {
+      padding: 15px;
+      font-size: 25px;
+    }
+  
+    h3 {
+      padding: 8px 0 8px 0;
+      font-size: 25px;
+    }
+  
+    .contact_info {
+      width: 33%;
+      min-width: 290px;
+      padding: 15px;
+      background-color: white;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      box-shadow: 8px 8px 10px  rgba(0, 0, 0, 0.2);
+    }
+  
+    .contact_info p {
+      margin: 8px;
+      color: black;
+    }
+  
+    .websites {
+      width: 33%;
+      min-width: 290px;
+      padding: 70px 0 10px 20px;
+      background-color: white;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      box-shadow: 8px 8px 10px  rgba(0, 0, 0, 0.2);
+      
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+    
+    img {
+      position: relative;
+      bottom: 40px;
+      max-height: 314px;
+      max-width: 400px;
+      box-shadow: 8px 8px 10px  rgba(0, 0, 0, 0.2);
+    }
+  }

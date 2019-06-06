@@ -35,9 +35,7 @@ class Animation extends Component {
     sway = (e) => {
         if(!this.state.hasJiggled){
             e.currentTarget.classList.add('sway');
-        }
-        
-        
+        }       
         setTimeout(() => {
             const layers = ['layer2', 'layer5', 'layer6', 'layer7', 'layer8', 'layer9'];
             layers.forEach((layer)=>{
@@ -50,7 +48,7 @@ class Animation extends Component {
         })
     }
 
-    resetJiggle = (e) => {
+    resetJiggle = () => {
         this.setState({
             hasJiggled: false
         })

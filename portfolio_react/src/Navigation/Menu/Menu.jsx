@@ -37,13 +37,13 @@ function MenuListComposition() {
   return (
     <div className={classes.root}>
       
-      <div class="menu">
+      <div className="menu">
         <Button
           aria-controls="menu-list-grow"
           aria-haspopup="true"
           onClick={handleToggle}
         >
-          <img id='menuLogo' src={require('../../images/bones.png')}></img>
+          <img id='menuLogo' alt='menuLogo' src={require('../../images/bones.png')}></img>
         </Button>
         <Popper open={open} anchorEl={anchorRef.current} keepMounted transition disablePortal>
           {({ TransitionProps, placement }) => (

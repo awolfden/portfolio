@@ -5,6 +5,7 @@ header.MuiPaper-root {
 }
 
 div.MuiToolbar-root {
+  min-width: 460px;
   background-color: #DDD7D7;
   display: flex;
   justify-content: space-between;
@@ -54,6 +55,12 @@ a:hover {
   }
   100% {
     transform: rotate(180deg);
+  }
+}
+@media (max-width: 750px) {
+  div.MuiToolbar-root {
+    flex-direction: column;
+    justify-content: center;
   }
 }
 .lightning {
@@ -376,7 +383,7 @@ html, body, ul, ol {
   height: 80%;
 }
 
-@media (max-width: 839px) {
+@media (max-width: 750px) {
   div.contact_div div.websites {
     padding: 20px 10px;
     margin-top: -5px;
@@ -385,7 +392,7 @@ html, body, ul, ol {
     margin-top: 35px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 750px) {
   .navigation a {
     font-size: 17px;
   }

@@ -1,14 +1,62 @@
-.navigation {
-    width: 100%;
-    z-index: 5;
-    color: $main;
+header.MuiPaper-root {
+  background-color: $secondary;
+  color: $main;
+  font-family: $fontPrimary;
+}
+
+div.MuiToolbar-root {
     background-color: $secondary;
-    
-    a {
-      font-size: 25px;
-      font-family: $fontPrimary;
-    }
-    a.nav-link {
-      font-size: 18px;
-    }
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h6.MuiTypography-root {
+  font-family: $fontPrimary;
+  font-size: 25px;
+}
+
+span.MuiButton-label {
+  font-family: $fontPrimary;
+}
+
+div.MuiPaper-root {
+  right: 30px;
+}
+
+
+div.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded {
+  position: relative;
+  right: 40px;
+  
+}
+
+li.MuiButtonBase-root {
+  font-family: $fontPrimary;
+  color: $main;
+  
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+#menuLogo {
+  height: 40px;
+}
+
+#menuLogo:hover {
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(180deg)
+  }
+
+}

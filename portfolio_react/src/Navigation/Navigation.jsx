@@ -1,47 +1,47 @@
 import React from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import PropTypes from 'prop-types';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import Slide from '@material-ui/core/Slide';
+import Menu from './Menu/Menu';
 
-class Navigation extends React.Component {
-  constructor(props) {
-    super(props);
 
-    this.toggleNavbar = this.toggleNavbar.bind(this);
-    this.state = {
-      collapsed: true
-    };
-  }
 
-  toggleNavbar() {
-    this.setState({
-      collapsed: !this.state.collapsed
-    });
-  }
-  render() {
-    return (
-      <div className='navigation'>
-        <Navbar color="faded" light>
-          <NavbarBrand href="/" className="mr-auto">Adam Wolfman, Web Developer</NavbarBrand>
-          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-          <Collapse isOpen={!this.state.collapsed} navbar>
-            <Nav navbar>
-              <NavItem>
-                <NavLink href='#projects'>Projects</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href='#about'>About</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href='#contact'>Contact</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
-      </div>
-    );
-  }
+
+function HideOnScroll(props) {
+  const { children, window } = props;
+  const trigger = useScrollTrigger({ target: window ? window() : undefined });
+
+  return (
+    <Slide appear={false} direction="down" in={!trigger}>
+      {children}
+    </Slide>
+  );
 }
 
+HideOnScroll.propTypes = {
+  children: PropTypes.node.isRequired,
+  window: PropTypes.func,
+};
 
+export default function Navigation(props) {
+  return (
+    <React.Fragment id="navbar">
+      <CssBaseline />
+      <HideOnScroll {...props}>
+        <AppBar>
+          <Toolbar>
+            <Typography variant="h6">Adam Wolfman, Web Developer</Typography>
+            <Menu></Menu>
+          </Toolbar>
+        </AppBar>
+      </HideOnScroll>
+      <Toolbar />
+      
+    </React.Fragment>
+  );
+}
 
-
-export default Navigation;

@@ -1,17 +1,61 @@
-.navigation {
-  width: 100%;
-  z-index: 5;
-  color: #35423b;
+header.MuiPaper-root {
   background-color: #DDD7D7;
-}
-.navigation a {
-  font-size: 25px;
+  color: #35423b;
   font-family: "PT Mono", monospace;
 }
-.navigation a.nav-link {
-  font-size: 18px;
+
+div.MuiToolbar-root {
+  background-color: #DDD7D7;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+h6.MuiTypography-root {
+  font-family: "PT Mono", monospace;
+  font-size: 25px;
+}
+
+span.MuiButton-label {
+  font-family: "PT Mono", monospace;
+}
+
+div.MuiPaper-root {
+  right: 30px;
+}
+
+div.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded {
+  position: relative;
+  right: 40px;
+}
+
+li.MuiButtonBase-root {
+  font-family: "PT Mono", monospace;
+  color: #35423b;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+#menuLogo {
+  height: 40px;
+}
+
+#menuLogo:hover {
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
 .lightning {
   background-image: url("./images/lightning.gif");
   background-size: cover;

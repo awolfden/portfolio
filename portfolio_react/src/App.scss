@@ -24,7 +24,21 @@ html, body, ul, ol {
   height: 80%;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 375px) {
+  
+  div.app {
+    display: flex;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  svg {
+    position: relative;
+    left: 7px;
+  }
+
   div.contact_div {
     
    div.websites {
@@ -35,19 +49,38 @@ html, body, ul, ol {
       margin-top: 35px;
     }
   }
-}
 
-@media (max-width: 750px) {
+  div.MuiToolbar-root {
+    width: 375px;
+    h6 {
+      font-size: 20px;
+    }
+  }
+
   .navigation {
+    
+
     a {
-      font-size: 17px;
+      font-size: 12px;
     }
   }  
 
   svg {
     max-width: 375px;
   }
-
 }
+
+// @media (max-width: 750px) {
+//   .navigation {
+//     a {
+//       font-size: 17px;
+//     }
+//   }  
+
+//   svg {
+//     max-width: 375px;
+//   }
+
+// }
 
 

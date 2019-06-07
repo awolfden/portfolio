@@ -5,7 +5,7 @@ header.MuiPaper-root {
 }
 
 div.MuiToolbar-root {
-  min-width: 460px;
+  min-width: 375px;
   background-color: #DDD7D7;
   display: flex;
   justify-content: space-between;
@@ -383,7 +383,20 @@ html, body, ul, ol {
   height: 80%;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 375px) {
+  div.app {
+    display: flex;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  svg {
+    position: relative;
+    left: 7px;
+  }
+
   div.contact_div div.websites {
     padding: 20px 10px;
     margin-top: -5px;
@@ -391,10 +404,16 @@ html, body, ul, ol {
   div.contact_div img {
     margin-top: 35px;
   }
-}
-@media (max-width: 750px) {
+
+  div.MuiToolbar-root {
+    width: 375px;
+  }
+  div.MuiToolbar-root h6 {
+    font-size: 20px;
+  }
+
   .navigation a {
-    font-size: 17px;
+    font-size: 12px;
   }
 
   svg {

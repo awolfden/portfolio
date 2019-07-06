@@ -18,16 +18,34 @@ $fontPrimary:'PT Mono', monospace;
 html, body, ul, ol {
   margin:  0;
   padding: 0;
+  width: 100% !important;
 }
 
 .App {
   height: 80%;
 }
 
-@media (max-width: 375px) {
+div.svg_container {
+  width: 100%;
+}
+
+@media (max-width: 780px) {
+  .contact {
+    div.websites {
+      margin-bottom: 0px;
+    }
+  
+  }
+}
+
+@media (max-width: 411px) {
   
   div.app {
     display: flex;
+  }
+
+  div.svg_container {
+    width: 100%;
   }
 
   header {
@@ -44,9 +62,11 @@ html, body, ul, ol {
    div.websites {
       padding: 20px 10px;
       margin-top: -5px;
+      margin-bottom: 0px;
+      height: 120px;
     }
-    img {
-      margin-top: 35px;
+    iframe {
+      margin-bottom: 70px;
     }
   }
 
@@ -57,9 +77,7 @@ html, body, ul, ol {
     }
   }
 
-  .navigation {
-    
-
+  .navigation {   
     a {
       font-size: 12px;
     }
@@ -70,17 +88,6 @@ html, body, ul, ol {
   }
 }
 
-// @media (max-width: 750px) {
-//   .navigation {
-//     a {
-//       font-size: 17px;
-//     }
-//   }  
 
-//   svg {
-//     max-width: 375px;
-//   }
-
-// }
 
 

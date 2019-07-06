@@ -108,6 +108,19 @@ a:hover {
   animation-fill-mode: forwards;
 }
 
+.drawSmall {
+  stroke: black;
+  stroke-width: 2px;
+  stroke-dashOffset: -2000;
+  stroke-dasharray: 2000;
+  animation-name: draw;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-direction: backwards;
+  animation-timing-function: normal;
+  animation-fill-mode: backwards;
+}
+
 @keyframes draw {
   0% {
     stroke-dashoffset: -2000;

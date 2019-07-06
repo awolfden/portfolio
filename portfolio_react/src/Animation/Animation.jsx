@@ -19,7 +19,14 @@ class Animation extends Component {
                 document.getElementById(`${layer}`).classList.remove('hidden');
             })
     
-            document.getElementById('layer3').classList.add('draw');
+            let width = window.innerWidth;
+            if(width <= 411){
+                document.getElementById('layer3').classList.add('drawSmall');
+            } else {
+                document.getElementById('layer3').classList.add('draw');
+            }
+
+            
             document.getElementById('layer3').classList.remove('hidden');
             document.getElementById('svg').classList.remove('bigLogo');
             document.getElementById('svg').classList.add('shrink');

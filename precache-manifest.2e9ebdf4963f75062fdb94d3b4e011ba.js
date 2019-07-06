@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0a12e18d5976749a1934ec49d70f14c6",
+    "revision": "f6f418b90138c3af0fe9aacb9b107e8a",
     "url": "/index.html"
   },
   {
-    "revision": "ba52ea0d8dfbf8d78800",
+    "revision": "63b55f41539b7d6f7a1a",
     "url": "/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "ac1f00ce0c263b8ae464",
-    "url": "/static/css/main.f2ac6421.chunk.css"
+    "revision": "071c94e7bf5481faa338",
+    "url": "/static/css/main.920c2cda.chunk.css"
   },
   {
-    "revision": "ba52ea0d8dfbf8d78800",
-    "url": "/static/js/2.b2e1bade.chunk.js"
+    "revision": "63b55f41539b7d6f7a1a",
+    "url": "/static/js/2.919c2c49.chunk.js"
   },
   {
-    "revision": "ac1f00ce0c263b8ae464",
-    "url": "/static/js/main.ccb9da29.chunk.js"
+    "revision": "071c94e7bf5481faa338",
+    "url": "/static/js/main.32c07a54.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -30,10 +30,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ee142dda3e037c7dac29692dba5adce3",
     "url": "/static/media/Syndrome.ee142dda.png"
-  },
-  {
-    "revision": "8ecfbb870fa8721aac53317e734b0686",
-    "url": "/static/media/denver_map.8ecfbb87.png"
   },
   {
     "revision": "49ab1a76cbbb90e66c16eed615548833",

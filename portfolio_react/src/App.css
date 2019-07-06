@@ -116,9 +116,9 @@ a:hover {
   animation-name: draw;
   animation-duration: 3s;
   animation-iteration-count: 1;
-  animation-direction: backwards;
+  animation-direction: forwards;
   animation-timing-function: normal;
-  animation-fill-mode: backwards;
+  animation-fill-mode: forwards;
 }
 
 @keyframes draw {

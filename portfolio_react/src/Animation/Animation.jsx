@@ -21,7 +21,7 @@ class Animation extends Component {
     
             let width = window.innerWidth;
             if(width <= 411){
-                document.getElementById('layer3').classList.add('fadeIn');
+                document.getElementById('layer3').classList.add('fadeInSmall');
             } else {
                 document.getElementById('layer3').classList.add('draw');
             }

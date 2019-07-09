@@ -6,6 +6,16 @@ class Projects extends Component {
         this.state = {
             cards: [
                 {
+                    title: 'Broadway Roxy',
+                    p1: 'Landing page for bar-restaurant',
+                    p2: 'JAM Stack with React, ',
+                    p3: 'Event Calendar Uses Google Cal CMS',
+                    img: require('../images/Roxy.png'),
+                    alt: 'Broadway Roxy',
+                    href: 'https://broadwayroxy.com/',
+                    key: 0
+                },
+                {
                     title: 'inHIIT',
                     p1: 'Workout Interval Timer App',
                     p2: 'MERN Stack, API Calls and User Auth',
@@ -13,17 +23,17 @@ class Projects extends Component {
                     img: require('../images/inHiit.png'),
                     alt: 'inHIIT',
                     href: 'https://inhiit.herokuapp.com/',
-                    key: 0
+                    key: 1
                 },
                 {
                     title: 'SAVR',
                     p1: 'Social Collaborative Recipe App',
                     p2: '3 Model CRUD, User Authentication',
-                    p3: 'Leave Comments on the Recipes You Like',
+                    p3: 'Leave Comments on the Recipes',
                     img: require('../images/SAVR.png'),                    
                     alt: 'SAVR',
                     href: 'https://savrapp.herokuapp.com/auth/login', 
-                    key: 1
+                    key: 2
                 },
                 {
                     title: 'Syndrome Island',
@@ -33,7 +43,7 @@ class Projects extends Component {
                     img: require('../images/Syndrome.png'),                    
                     alt: 'SAVR',
                     href: 'https://awolfden.github.io/escape_from_syndrome_island/',
-                    key: 2
+                    key: 3
                 },
                 {
                     title: 'inHIIT Java',
@@ -43,8 +53,18 @@ class Projects extends Component {
                     img: require('../images/inHiit.png'),
                     alt: 'inHIIT Java',
                     href: 'https://inhiitfrontend.herokuapp.com/',
-                    key: 3
+                    key: 4
                 },
+                {
+                    title: 'Tommy-Gachi',
+                    p1: 'Tom Haverford Tomagachi Game',
+                    p2: 'Javascript and jQuery Animated',
+                    p3: 'Themed audio enhances gameplay',
+                    img: require('../images/tommy_logo.png'),
+                    alt: 'Tom-agachi',
+                    href: 'https://awolfden.github.io/Tom-agachi/',
+                    key: 5
+                }
             ]
 
         }

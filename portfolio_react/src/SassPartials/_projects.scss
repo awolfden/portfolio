@@ -56,10 +56,16 @@
       width: 200px;
     }
   
-   
+   div.image {
+     display: flex;
+     justify-content: center;
+     
+   }
   
     img {
       height: 70px;
+      padding-left: 95px;
+      margin-top: 5px;
     }
   
     div.project_tiles div.card div.description {  

@@ -38,6 +38,17 @@ div.svg_container {
   }
 }
 
+@media (max-width: 522px) {
+  .contact {
+    #iframe {
+      margin-bottom: 70px;
+    }
+    .contact_info {
+      margin-bottom: 5px;
+    }
+  }
+}
+
 @media (max-width: 411px) {
   
   div.app {
@@ -57,17 +68,19 @@ div.svg_container {
     left: 7px;
   }
 
-  div.contact_div {
-    
-   div.websites {
-      padding: 20px 10px;
-      margin-top: -5px;
-      margin-bottom: 0px;
-      height: 120px;
-    }
-    iframe {
+  .contact {
+   
+    #iframe {
       margin-bottom: 70px;
     }
+  
+    div.websites {
+        padding: 20px 10px;
+        margin-top: -5px;
+        margin-bottom: 0px;
+        height: 120px;
+      }
+    
   }
 
   div.MuiToolbar-root {
@@ -86,6 +99,8 @@ div.svg_container {
   svg {
     max-width: 375px;
   }
+
+  
 }
 
 

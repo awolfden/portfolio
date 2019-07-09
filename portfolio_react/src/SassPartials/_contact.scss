@@ -4,6 +4,7 @@
     color: $main;
     background-color: $secondary;
     font-family: $fontPrimary;
+    min-height: 425px;
   
     a:hover {
       color: rgb(23, 107, 107) !important;
@@ -26,7 +27,8 @@
     }
   
     .contact_info {
-      width: 33%;
+      width: 45%;
+      height: 275px;
       min-width: 290px;
       padding: 15px;
       background-color: white;
@@ -46,27 +48,27 @@
       text-decoration: none;
     }
   
-    .websites {
-      height: 200px;
-      width: 33%;
-      min-width: 250px;
-      padding: 70px 0 10px 20px;
-      background-color: white;
-      margin-top: 30px;
-      margin-bottom: 40px;
-      box-shadow: 8px 8px 10px  rgba(0, 0, 0, 0.2);
+    // .websites {
+    //   height: 200px;
+    //   width: 33%;
+    //   min-width: 250px;
+    //   padding: 70px 0 10px 20px;
+    //   background-color: white;
+    //   margin-top: 30px;
+    //   margin-bottom: 40px;
+    //   box-shadow: 8px 8px 10px  rgba(0, 0, 0, 0.2);
       
-      a {
-        color: black;
-        text-decoration: none;
-      }
-    }
+    //   a {
+    //     color: black;
+    //     text-decoration: none;
+    //   }
+    // }
     
     iframe {
       position: relative;
       top: 30px;
-      max-height: 200px;
-      width: 33%;
+      max-height: 275px;
+      width: 45%;
       min-width: 290px;
       box-shadow: 8px 8px 10px  rgba(0, 0, 0, 0.2);
 

@@ -13,7 +13,7 @@ class About extends Component {
             <div id='about' className='about'>
                 <h1>Stuff I Am</h1>
                 <div>
-                    <p>I am a software engineer who just graduated from 
+                    <p>I am a software engineer, recently graduated from 
                     the General Assembly 12 week immersive program with 
                     8 years experience in mortgage finance as an analyst. </p>
 

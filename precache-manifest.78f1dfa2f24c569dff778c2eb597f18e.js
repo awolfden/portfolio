@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a739926ff584ff7892994fc3e80d119f",
+    "revision": "9d265649a892b99ae80c25870064e213",
     "url": "/index.html"
   },
   {
@@ -8,24 +8,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "0efff79fc7e809847c83",
-    "url": "/static/css/main.677f941c.chunk.css"
+    "revision": "19529feb0e6eac41778f",
+    "url": "/static/css/main.89bee689.chunk.css"
   },
   {
     "revision": "49a3077ed72b092f49bd",
     "url": "/static/js/2.415b76e4.chunk.js"
   },
   {
-    "revision": "0efff79fc7e809847c83",
-    "url": "/static/js/main.be0c8658.chunk.js"
+    "revision": "19529feb0e6eac41778f",
+    "url": "/static/js/main.ea37bc66.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
-  },
-  {
-    "revision": "2c81d5987b0e215fc7d125a979605899",
-    "url": "/static/media/Roxy.2c81d598.png"
   },
   {
     "revision": "2c47ebbc7a5a583d49633ff37c8511f5",
@@ -46,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "45e40d1bc45104196c84b3b372e52113",
     "url": "/static/media/resume.45e40d1b.pdf"
+  },
+  {
+    "revision": "d7613ce7a38e3cb381df606684e5a703",
+    "url": "/static/media/roxy_logo.d7613ce7.png"
   },
   {
     "revision": "ac2c103ccc4bd76a51fd15584fee58eb",

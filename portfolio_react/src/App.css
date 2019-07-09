@@ -246,10 +246,11 @@ a:hover {
   display: flex;
   justify-content: center;
 }
+.projects .needs-padding {
+  padding-left: 50px;
+}
 .projects img {
   height: 70px;
-  padding-left: 95px;
-  margin-top: 5px;
 }
 .projects div.project_tiles div.card div.description {
   height: 100px;

@@ -10,10 +10,11 @@ class Projects extends Component {
                     p1: 'Landing page for bar-restaurant',
                     p2: 'JAM Stack with React, ',
                     p3: 'Event Calendar Uses Google Cal CMS',
-                    img: require('../images/Roxy.png'),
+                    img: require('../images/roxy_logo.png'),
                     alt: 'Broadway Roxy',
                     href: 'https://broadwayroxy.com/',
-                    key: 0
+                    key: 0,
+                    class: 'needs-padding'
                 },
                 {
                     title: 'inHIIT',
@@ -63,7 +64,8 @@ class Projects extends Component {
                     img: require('../images/tommy_logo.png'),
                     alt: 'Tom-agachi',
                     href: 'https://awolfden.github.io/Tom-agachi/',
-                    key: 5
+                    key: 5,
+                    class: 'needs-padding'
                 }
             ]
 
@@ -97,7 +99,7 @@ class Projects extends Component {
             return(
                 <div id={index} key={index} className='card' onMouseEnter={this.grow} onMouseLeave={this.normalize}>
                 <a target="_blank" rel="noopener noreferrer" href={card.href}>
-                <div className='image'><img src={card.img} alt={card.alt}/></div>
+                <div className='image'><img className={card.class} src={card.img} alt={card.alt}/></div>
                 <div className='description'>
                     <h4>{card.title}</h4>
                     <p>{card.p1}</p>

@@ -61,11 +61,11 @@
      justify-content: center;
      
    }
-  
+    .needs-padding {
+      padding-left: 50px;
+    }
     img {
       height: 70px;
-      padding-left: 95px;
-      margin-top: 5px;
     }
   
     div.project_tiles div.card div.description {  

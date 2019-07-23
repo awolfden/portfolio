@@ -6,13 +6,13 @@ class Projects extends Component {
         this.state = {
             cards: [
                 {
-                    title: 'Broadway Roxy',
+                    title: 'Roxy Encinitas',
                     p1: 'Landing page for bar-restaurant',
                     p2: 'JAM Stack with React, ',
-                    p3: 'Event Calendar Uses Google Cal CMS',
+                    p3: 'Serverless shop, GCal CMS, & Instagram',
                     img: require('../images/roxy_logo.png'),
-                    alt: 'Broadway Roxy',
-                    href: 'https://broadwayroxy.com/',
+                    alt: 'Roxy Encinitas',
+                    href: 'http://roxyencinitas.com/',
                     key: 0,
                     class: 'needs-padding'
                 },

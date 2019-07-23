@@ -1,22 +1,424 @@
+header.MuiPaper-root {
+  background-color: #DDD7D7;
+  color: #35423b;
+  font-family: "PT Mono", monospace;
+}
 
+div.MuiToolbar-root {
+  min-width: 375px;
+  background-color: #DDD7D7;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-$main: rgb(53, 66, 59);
-$secondary: #DDD7D7;
-$nav: rgba(221, 215, 215, 0.295);
-$fontPrimary:'PT Mono', monospace;
+h6.MuiTypography-root {
+  font-family: "PT Mono", monospace;
+  font-size: 25px;
+}
 
+span.MuiButton-label {
+  font-family: "PT Mono", monospace;
+}
 
-@import './SassPartials/navigation';
-@import './SassPartials/animation';
-@import './SassPartials/projects';
-@import './SassPartials/about';
-@import './SassPartials/contact';
-@import './SassPartials/footer';
+div.MuiPaper-root {
+  right: 30px;
+}
 
+div.menu {
+  background-color: none !important;
+}
 
+div.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded {
+  position: relative;
+  right: 40px;
+}
+
+li.MuiButtonBase-root {
+  font-family: "PT Mono", monospace;
+  color: #35423b;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+#menuLogo {
+  height: 40px;
+}
+
+#menuLogo:hover {
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@media (max-width: 750px) {
+  div.MuiToolbar-root {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.lightning {
+  background-image: url("./images/lightning.gif");
+  background-size: cover;
+}
+
+.animation {
+  display: flex;
+  justify-content: center;
+  color: #35423b;
+  height: 600px;
+}
+
+.animation div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-width: 1000px;
+  max-width: 1000px;
+}
+
+.animation svg {
+  width: 50%;
+  padding: 10px;
+}
+
+.animation svg.bigLogo {
+  transform: scale(1.9);
+  position: relative;
+  top: 200px;
+}
+
+.draw {
+  stroke: black;
+  stroke-width: 2px;
+  stroke-dashOffset: -2000;
+  stroke-dasharray: 2000;
+  animation-name: draw;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-direction: forwards;
+  animation-timing-function: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: -2000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.fadeIn {
+  animation-name: fade;
+  animation-duration: 4.3s;
+  animation-iteration-count: 1;
+}
+
+.fadeInSmall {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.hidden {
+  visibility: hidden;
+}
+
+.shrink {
+  animation-name: shrink;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1.9);
+    position: relative;
+    top: 200px;
+    stroke: cyan;
+    fill: #00ffbf;
+  }
+  5% {
+    stroke: cyan;
+  }
+  100% {
+    transform: scale(1);
+    position: relative;
+    top: 0;
+    stroke: black;
+  }
+}
+.sway {
+  animation-name: sway;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes sway {
+  20% {
+    transform: skew(1deg, 0deg);
+    stroke: cyan;
+    fill: #00ffbf;
+  }
+  50% {
+    transform: skew(-1deg, 0deg);
+  }
+  75% {
+    transform: skew(1deg, 0deg);
+  }
+  100% {
+    transform: skew(0deg, 0deg);
+    stroke: black;
+  }
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #35423b;
+  background-color: #DDD7D7;
+}
+
+.projects div.fadeAway {
+  opacity: 0.3;
+}
+
+.projects h1 {
+  padding: 15px 15px 0px 15px;
+  margin-bottom: 0px;
+  font-size: 25px;
+  font-family: "PT Mono", monospace;
+}
+
+.projects h4 {
+  color: black;
+  margin: 8px 0 0 15px;
+  font-family: "PT Mono", monospace;
+}
+
+.projects p {
+  color: black;
+  margin: 10px;
+  font-size: 12px;
+  line-height: 100%;
+  font-family: "PT Mono", monospace;
+}
+
+.projects a:hover {
+  text-decoration: none;
+}
+
+.projects div.project_tiles {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 30px;
+}
+
+.projects div.project_tiles div.card {
+  height: 200px;
+  min-width: 200px;
+  padding: 5px;
+  margin: 15px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.projects div.project_tiles div.card div.image {
+  height: 75px;
+  width: 200px;
+}
+
+.projects div.image {
+  display: flex;
+  justify-content: center;
+}
+
+.projects .needs-padding {
+  padding-left: 50px;
+}
+
+.projects img {
+  height: 70px;
+}
+
+.projects div.project_tiles div.card div.description {
+  height: 100px;
+  width: 300px;
+}
+
+.grow {
+  animation-name: grow;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transform: scale(1.3);
+  box-shadow: 2px 2px 2px 2px rgba(0, 255, 191, 0.1) !important;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+.normalize {
+  animation-name: normalize;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes normalize {
+  0% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  color: #35423b;
+}
+
+.about h1 {
+  padding: 15px 15px 0px 15px;
+  margin-bottom: 0px;
+  font-family: "PT Mono", monospace;
+  font-size: 25px;
+}
+
+.about div {
+  margin: 30px 50px 50px 50px;
+}
+
+.about p {
+  margin: 16px;
+  font-family: "PT Mono", monospace;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  color: #35423b;
+  background-color: #DDD7D7;
+  font-family: "PT Mono", monospace;
+  min-height: 425px;
+}
+
+.contact a:hover {
+  color: #176b6b !important;
+  text-decoration: none;
+}
+
+.contact .contact_div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.contact h1 {
+  padding: 15px;
+  font-size: 25px;
+}
+
+.contact h3 {
+  padding: 8px 0 8px 0;
+  font-size: 25px;
+}
+
+.contact .contact_info {
+  width: 45%;
+  height: 275px;
+  min-width: 290px;
+  padding: 15px;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact .contact_info p {
+  margin: 8px;
+  color: black;
+}
+
+.contact a {
+  color: black;
+  text-decoration: none;
+}
+
+.contact iframe {
+  position: relative;
+  top: 30px;
+  max-height: 275px;
+  width: 45%;
+  min-width: 290px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 10+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(99%);
+  /* Chrome 19+ & Safari 6+ */
+  -webkit-backface-visibility: hidden;
+  /* Fix for transition flickering */
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.footer .right {
+  background-color: #DDD7D7;
+  clip-path: polygon(100% 0%, 0 100%, 100% 100%);
+  width: 100%;
+  z-index: 1;
+}
+
+.footer img {
+  position: relative;
+  left: 70%;
+  bottom: 15px;
+  height: 190px;
+  opacity: 0.3;
+  z-index: 2;
+}
 
 html, body, ul, ol {
-  margin:  0;
+  margin: 0;
   padding: 0;
   width: 100% !important;
 }
@@ -30,27 +432,20 @@ div.svg_container {
 }
 
 @media (max-width: 780px) {
-  .contact {
-    div.websites {
-      margin-bottom: 0px;
-    }
-  
+  .contact div.websites {
+    margin-bottom: 0px;
   }
 }
-
 @media (max-width: 522px) {
-  .contact {
-    #iframe {
-      margin-bottom: 70px;
-    }
-    .contact_info {
-      margin-bottom: 5px;
-    }
+  .contact #iframe {
+    margin-bottom: 70px;
+  }
+
+  .contact .contact_info {
+    margin-bottom: 5px;
   }
 }
-
 @media (max-width: 411px) {
-  
   div.app {
     display: flex;
   }
@@ -68,41 +463,33 @@ div.svg_container {
     left: 7px;
   }
 
-  .contact {
-   
-    #iframe {
-      margin-bottom: 70px;
-    }
-  
-    div.websites {
-        padding: 20px 10px;
-        margin-top: -5px;
-        margin-bottom: 0px;
-        height: 120px;
-      }
-    
+  .contact #iframe {
+    margin-bottom: 70px;
+  }
+
+  .contact div.websites {
+    padding: 20px 10px;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    height: 120px;
   }
 
   div.MuiToolbar-root {
     width: 375px;
-    h6 {
-      font-size: 20px;
-    }
   }
 
-  .navigation {   
-    a {
-      font-size: 12px;
-    }
-  }  
+  div.MuiToolbar-root h6 {
+    font-size: 20px;
+  }
+
+  .navigation a {
+    font-size: 12px;
+  }
 
   svg {
     max-width: 375px;
   }
-
-  
 }
+/*# sourceMappingURL=App.css.map */
 
-
-
-
+/*# sourceMappingURL=App.scss.map */

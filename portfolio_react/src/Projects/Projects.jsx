@@ -47,13 +47,13 @@ class Projects extends Component {
                     key: 3
                 },
                 {
-                    title: 'inHIIT Java',
-                    p1: 'Workout Interval Timer App',
-                    p2: 'Rebuilt Backend With Java and SQL',
-                    p3: 'Theme Changes With Current Weather',
-                    img: require('../images/inHiit.png'),
+                    title: 'WKRBee',
+                    p1: 'Employee Management System',
+                    p2: 'MERN stack using Redux',
+                    p3: 'Utilized Material UI Theming',
+                    img: require('../images/wkrbee_tile.png'),
                     alt: 'inHIIT Java',
-                    href: 'https://inhiitfrontend.herokuapp.com/',
+                    href: 'https://awolfden.github.io/WKRBee/',
                     key: 4
                 },
                 {

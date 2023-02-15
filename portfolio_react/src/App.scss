@@ -490,6 +490,43 @@ div.svg_container {
     max-width: 375px;
   }
 }
-/*# sourceMappingURL=App.css.map */
 
-/*# sourceMappingURL=App.scss.map */
+
+.selected-poly polyline, .selected-poly polygon {
+  fill: #87c8b8 !important;
+}
+
+.flex {
+  display: flex;
+  min-width: 1030px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-right {
+  justify-content: flex-end;
+}
+
+.width-50 {
+  width: 50vw;
+}
+
+.width-75 {
+  width: 75vw;
+}
+
+.width-100 {
+  width: 100vw;
+}
+
+.bottom-125 {
+  position: relative;
+  bottom: 125px;
+}
+
+html, .App {
+  background-color: #f0ebd8;
+}

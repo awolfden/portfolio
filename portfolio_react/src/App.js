@@ -6,7 +6,7 @@ import Projects from './Projects/Projects';
 import About from './About/About';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
-
+import Home from './SvgBackground/SvgBackground';
 
 
 class App extends Component {
@@ -22,12 +22,7 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <Navigation/>
-        <Animation/>
-        <Projects/>
-        <About/>
-        <Contact/>
-        <Footer/>
+        <Home/>
       </div>
     )
   }

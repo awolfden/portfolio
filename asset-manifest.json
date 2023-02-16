@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.577869c8.css",
-    "main.js": "/static/js/main.4d9b2a98.js",
-    "static/media/resume.png": "/static/media/resume.d80a9cb0c0d6b271f422.png",
-    "static/media/lightning.gif": "/static/media/lightning.faf9479fe6a29a8c7f20.gif",
-    "static/media/roxy_logo.png": "/static/media/roxy_logo.fa45e1ddcf7838cecfc0.png",
-    "static/media/wolf-logo.png": "/static/media/wolf-logo.2a87d5ffa3c8ea1db4bd.png",
-    "static/media/Syndrome.png": "/static/media/Syndrome.94ef1577417a516e6ed5.png",
-    "index.html": "/index.html",
-    "main.577869c8.css.map": "/static/css/main.577869c8.css.map",
-    "main.4d9b2a98.js.map": "/static/js/main.4d9b2a98.js.map"
+    "main.css": "./static/css/main.0a23759a.css",
+    "main.js": "./static/js/main.1aba4950.js",
+    "static/media/resume.png": "./static/media/resume.d80a9cb0c0d6b271f422.png",
+    "static/media/lightning.gif": "./static/media/lightning.faf9479fe6a29a8c7f20.gif",
+    "static/media/roxy_logo.png": "./static/media/roxy_logo.fa45e1ddcf7838cecfc0.png",
+    "static/media/wolf-logo.png": "./static/media/wolf-logo.2a87d5ffa3c8ea1db4bd.png",
+    "static/media/Syndrome.png": "./static/media/Syndrome.94ef1577417a516e6ed5.png",
+    "index.html": "./index.html",
+    "main.0a23759a.css.map": "./static/css/main.0a23759a.css.map",
+    "main.1aba4950.js.map": "./static/js/main.1aba4950.js.map"
   },
   "entrypoints": [
-    "static/css/main.577869c8.css",
-    "static/js/main.4d9b2a98.js"
+    "static/css/main.0a23759a.css",
+    "static/js/main.1aba4950.js"
   ]
 }

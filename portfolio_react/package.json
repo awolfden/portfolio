@@ -11,8 +11,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^6.8.1",
-    "react-scripts": "3.0.1",
-    "react-touch": "^0.4.4",
+    "react-scripts": "^5.0.1",
+    "react-touch": "^0.1.6",
     "reactstrap": "^8.0.0"
   },
   "scripts": {
@@ -38,5 +38,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://adamwolfman.com"
+  "homepage": "."
 }

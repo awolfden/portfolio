@@ -201,7 +201,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   color: #35423b;
-  background-color: #DDD7D7;
+  background-color: #f0ebd8;
 }
 
 .projects div.fadeAway {
@@ -223,7 +223,7 @@ a:hover {
 
 .projects p {
   color: black;
-  margin: 10px;
+  margin: 30px 10px 10px 10px;
   font-size: 12px;
   line-height: 100%;
   font-family: "PT Mono", monospace;
@@ -242,11 +242,12 @@ a:hover {
 }
 
 .projects div.project_tiles div.card {
-  height: 200px;
-  min-width: 200px;
+  height: 150px;
+  width: 40vw;
   padding: 5px;
   margin: 15px;
-  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .projects div.project_tiles div.card div.image {
@@ -269,15 +270,13 @@ a:hover {
 
 .projects div.project_tiles div.card div.description {
   height: 100px;
-  width: 300px;
 }
 
 .grow {
   animation-name: grow;
   animation-duration: 0.5s;
   animation-iteration-count: 1;
-  transform: scale(1.3);
-  box-shadow: 2px 2px 2px 2px rgba(0, 255, 191, 0.1) !important;
+  transform: scale(1.1);
 }
 
 @keyframes grow {
@@ -285,7 +284,7 @@ a:hover {
     transform: scale(1);
   }
   100% {
-    transform: scale(1.3);
+    transform: scale(1.1);
   }
 }
 .normalize {
@@ -296,7 +295,7 @@ a:hover {
 
 @keyframes normalize {
   0% {
-    transform: scale(1.3);
+    transform: scale(1.1);
   }
   100% {
     transform: scale(1);
@@ -328,7 +327,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   color: #35423b;
-  background-color: #DDD7D7;
+  background-color: #f0ebd8;
   font-family: "PT Mono", monospace;
   min-height: 425px;
 }
@@ -356,7 +355,7 @@ a:hover {
 
 .contact .contact_info {
   width: 45%;
-  height: 275px;
+  height: 250px;
   min-width: 290px;
   padding: 15px;
   background-color: white;
@@ -378,7 +377,7 @@ a:hover {
 .contact iframe {
   position: relative;
   top: 30px;
-  max-height: 275px;
+  height: 500px;
   width: 45%;
   min-width: 290px;
   box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
@@ -490,6 +489,75 @@ div.svg_container {
     max-width: 375px;
   }
 }
-/*# sourceMappingURL=App.css.map */
 
-/*# sourceMappingURL=App.scss.map */
+
+.selected-poly polyline, .selected-poly polygon {
+  fill: #87c8b8 !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-right {
+  justify-content: flex-end;
+}
+
+.width-50 {
+  width: 50vw;
+}
+
+.width-75 {
+  width: 75vw;
+}
+
+.width-100 {
+  width: 100vw;
+  min-width: 1050px;
+}
+
+.height-95 {
+  height: 95vh;
+}
+
+.bottom-125 {
+  position: relative;
+  bottom: 125px;
+}
+
+.top-2rel {
+  position: relative;
+  top: 2.3vh;
+}
+
+.right-50 {
+  position: relative;
+  top: 5px;
+  right: 50px;
+}
+
+.padding-10 {
+  padding: 10px;
+}
+
+.padding-left-0 {
+  padding-left: 0px;
+}
+
+html, .App {
+  background-color: #f0ebd8;
+} 
+
+body {
+  min-width: 900px;
+}

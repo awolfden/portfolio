@@ -1,37 +1,27 @@
-import React, {Component} from 'react';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 import './App.css';
-import Navigation from './Navigation/Navigation';
-import Animation from './Animation/Animation';
-import Projects from './Projects/Projects';
+import Index from './Index/Index';
 import About from './About/About';
-import Contact from './Contact/Contact';
-import Footer from './Footer/Footer';
+import Projects from './Projects/Projects';
+import Resume from './Resume/Resume';
 
 
-
-class App extends Component {
-  constructor(){
-    super();
-    this.state = {
-
-    }
-
-  }
-
-
-  render(){
-    return (
-      <div className="App">
-        <Navigation/>
-        <Animation/>
-        <Projects/>
-        <About/>
-        <Contact/>
-        <Footer/>
+export default function App() {
+  return (
+    <Router>
+      <div>            
+        <Routes>
+          <Route path="/" element={<Index/>} />
+          <Route path="/projects" element={<Projects/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/resume" element={<Resume/>} />
+        </Routes>
       </div>
-    )
-  }
-  
+    </Router>
+  );
 }
-
-export default App;

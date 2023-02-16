@@ -6,6 +6,78 @@ class Projects extends Component {
         this.state = {
             cards: [
                 {
+                    title: 'WorkOS Postman Public Workspace',
+                    p1: 'Postman workspace for the WorkOS API',
+                    img: require('../images/wolf-logo.png'),
+                    alt: 'Roxy Encinitas',
+                    href: 'https://workos.com/changelog/postman-public-workspace/',
+                    key: 0,
+                    class: 'right-50'
+                },
+                {
+                    title: 'WorkOS Bubble.io Plugin',
+                    p1: 'Bubble.io plugin for WorkOS SSO',
+                    img: require('../images/wolf-logo.png'),
+                    alt: 'WorkOS Bubble.io Plugin',
+                    href: 'https://bubble.io/plugin/workos-sso-1666727595127x530956156372516860/',
+                    key: 1,
+                    class: 'right-50'
+                },
+                {
+                    title: 'WorkOS SAML Sessions Dashboard',
+                    p1: 'WorkOS Dashboard tool',
+                    img: require('../images/wolf-logo.png'),
+                    alt: 'WorkOS SAML sessions in the dashboard',
+                    href: 'https://workos.com/changelog/debug-saml-sessions/',
+                    key: 2,
+                    class: 'right-50'
+                },
+                {
+                    title: 'WorkOS Cloudflare SAML Integration',
+                    p1: 'SAML integration for WorkOS',
+                    img: require('../images/wolf-logo.png'),
+                    alt: 'WorkOS SAML integration with Cloudflare',
+                    href: 'https://workos.com/changelog/new-integration-cloudflare-saml/',
+                    key: 3,
+                    class: 'right-50'
+                },
+                {
+                    title: 'WorkOS Oracle SAML Integration',
+                    p1: 'SAML integration for WorkOS',
+                    img: require('../images/wolf-logo.png'),
+                    alt: 'WorkOS SAML integration with Oracle',
+                    href: 'https://workos.com/changelog/new-integration-oracle-saml',
+                    key: 4,
+                    class: 'right-50'
+                },
+                {
+                    title: 'WorkOS PingFederate SCIM Integration',
+                    p1: 'SCIM integration for WorkOS',
+                    img: require('../images/wolf-logo.png'),
+                    alt: 'WorkOS SCIM integration with PingFederate',
+                    href: 'https://workos.com/changelog/extending-the-onelogin-and-pingfederate-integrations',
+                    key: 5,
+                    class: 'right-50'
+                },
+                {
+                    title: 'Test Webhooks with Ngrok',
+                    p1: 'Blog post written for WorkOS',
+                    img: require('../images/wolf-logo.png'),
+                    alt: 'Blog post about testing webhooks with Ngrok',
+                    href: 'https://segment.com/blog/qa-segment-events/',
+                    key: 6,
+                    class: 'right-50'
+                },
+                {
+                    title: 'How to QA Twilio Segment Events',
+                    p1: 'Blog post written for Twilio Segment',
+                    img: require('../images/wolf-logo.png'),
+                    alt: 'Blog post about testing webhooks with Ngrok',
+                    href: 'https://workos.com/blog/test-workos-webhooks-locally-ngrok',
+                    key: 7,
+                    class: 'right-50'
+                },
+                {
                     title: 'Roxy Encinitas',
                     p1: 'Landing page for bar-restaurant',
                     p2: 'JAM Stack with React, ',
@@ -13,28 +85,8 @@ class Projects extends Component {
                     img: require('../images/roxy_logo.png'),
                     alt: 'Roxy Encinitas',
                     href: 'http://roxyencinitas.com/',
-                    key: 0,
+                    key: 8,
                     class: 'needs-padding'
-                },
-                {
-                    title: 'inHIIT',
-                    p1: 'Workout Interval Timer App',
-                    p2: 'MERN Stack, API Calls and User Auth',
-                    p3: 'Theme Changes With Current Weather',
-                    img: require('../images/inHiit.png'),
-                    alt: 'inHIIT',
-                    href: 'https://inhiit.herokuapp.com/',
-                    key: 1
-                },
-                {
-                    title: 'SAVR',
-                    p1: 'Social Collaborative Recipe App',
-                    p2: '3 Model CRUD, User Authentication',
-                    p3: 'Leave Comments on the Recipes',
-                    img: require('../images/SAVR.png'),                    
-                    alt: 'SAVR',
-                    href: 'https://savrapp.herokuapp.com/auth/login', 
-                    key: 2
                 },
                 {
                     title: 'Syndrome Island',
@@ -42,31 +94,10 @@ class Projects extends Component {
                     p2: 'Used Javascript, jQuery, and Timers',
                     p3: 'Arcade Style Reloading',
                     img: require('../images/Syndrome.png'),                    
-                    alt: 'SAVR',
+                    alt: 'Syndrome Island game',
                     href: 'https://awolfden.github.io/escape_from_syndrome_island/',
-                    key: 3
+                    key: 9
                 },
-                {
-                    title: 'WKRBee',
-                    p1: 'Employee Management System',
-                    p2: 'MERN stack using Redux',
-                    p3: 'Utilized Material UI Theming',
-                    img: require('../images/wkrbee_tile.png'),
-                    alt: 'inHIIT Java',
-                    href: 'https://awolfden.github.io/WKRBee/',
-                    key: 4
-                },
-                {
-                    title: 'Tommy-Gachi',
-                    p1: 'Tom Haverford Tomagachi Game',
-                    p2: 'Javascript and jQuery Animated',
-                    p3: 'Themed audio enhances gameplay',
-                    img: require('../images/tommy_logo.png'),
-                    alt: 'Tom-agachi',
-                    href: 'https://awolfden.github.io/Tom-agachi/',
-                    key: 5,
-                    class: 'needs-padding'
-                }
             ]
 
         }
@@ -99,12 +130,10 @@ class Projects extends Component {
             return(
                 <div id={index} key={index} className='card' onMouseEnter={this.grow} onMouseLeave={this.normalize}>
                 <a target="_blank" rel="noopener noreferrer" href={card.href}>
-                <div className='image'><img className={card.class} src={card.img} alt={card.alt}/></div>
+                {/* <div className='image'><img className={card.class} src={card.img} alt={card.alt}/></div> */}
                 <div className='description'>
                     <h4>{card.title}</h4>
                     <p>{card.p1}</p>
-                    <p>{card.p2}</p>
-                    <p>{card.p3}</p>
                 </div>
                 </a>
             </div>

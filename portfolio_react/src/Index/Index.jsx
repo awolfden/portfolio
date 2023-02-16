@@ -1,6 +1,7 @@
 import * as React from "react";
+import resume from '../images/resume.png';
 
-function Home(props) {
+function Index(props) {
 
     const highlightColor = (e) => {                
         const id = e.currentTarget.id;
@@ -20,6 +21,50 @@ function Home(props) {
         document.getElementById(`${id}`).classList.add('selected-poly');
     }
 
+    const openLink = (e) => {
+        const urls = {
+            github: "https://github.com/awolfden",
+            resume: "/resume",
+            about: "/about",
+            projects: "/projects"            
+        }
+
+        let url = e.currentTarget.id
+        switch (url) {
+          case "github-poly":            
+            url = urls.github;
+            break;
+          case "resume-poly":
+            url = urls.resume;
+            break;
+          case "about-poly":
+            url = urls.about;
+            break; 
+          case "projects-poly":
+            url = urls.projects;
+            break;
+          default:
+            console.log("no url found")
+        }
+
+        if(url == urls.github){
+          window.open(url, "_blank");
+        } else {
+          window.location.href = url;
+        }
+
+    }
+
+    const Legend = () => {
+        return <div className="flex width-25">
+            <p className="padding-10 padding-left-0"><span style={{color: "#e76f50"}}>&#9632;</span> resume</p>
+            <p className="padding-10"><span style={{color: "#264653"}}>&#9632;</span> about</p>
+            <p className="padding-10"><span style={{color: "#e9c46a"}}>&#9632;</span> projects</p>
+            <p className="padding-10"><span style={{color: "#2a9d8f"}}>&#9632;</span> github</p>
+        </div>
+        
+    }
+
     const SvgBackground = (props) => (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -32,6 +77,7 @@ function Home(props) {
             id="github-poly"
             onMouseEnter={highlightColor}
             onMouseLeave={highlightColorReset}
+            onClick={openLink}
             >
             <polyline
               points="497.03 428 885.03 2 1364.03 2 1364.03 424 497.03 428"
@@ -46,6 +92,7 @@ function Home(props) {
           <g 
             id="github-icon"
                 onMouseEnter={handleIconHighlight}
+                onClick={openLink}
             >
             <g
               id="e"
@@ -63,6 +110,7 @@ function Home(props) {
             id="projects-poly"
             onMouseEnter={highlightColor}
             onMouseLeave={highlightColorReset}
+            onClick={openLink}
           >
             <polyline
               points="495.03 428 323.03 2 884.03 2 495.03 428"
@@ -77,6 +125,7 @@ function Home(props) {
           <g 
             id="projects-icon"
             onMouseEnter={handleIconHighlight}
+            onClick={openLink}
             >
             <g
               style={{
@@ -187,6 +236,7 @@ function Home(props) {
             id="about-poly"
             onMouseEnter={highlightColor}
             onMouseLeave={highlightColorReset}
+            onClick={openLink}
             >
             <polyline
               points="495.03 428 2.03 197.69 2.03 2 324.03 2 495.03 428 495.03 428"
@@ -201,6 +251,7 @@ function Home(props) {
           <g 
             id="about-icon"
             onMouseEnter={handleIconHighlight}
+            onClick={openLink}
             >
             <g
               style={{
@@ -235,6 +286,7 @@ function Home(props) {
             id="resume-poly"
             onMouseEnter={highlightColor}
             onMouseLeave={highlightColorReset}
+            onClick={openLink}
             >
             <polygon
               points="495.03 428.01 2 618.1 2.02 197.68 495.03 428.01"
@@ -245,10 +297,11 @@ function Home(props) {
                 strokeWidth: 4,
               }}
             />
-          </g>
+          </g>        
           <g 
             id="resume-icon"
             onMouseEnter={handleIconHighlight}
+            onClick={openLink}
             >
             <g
               style={{
@@ -307,17 +360,18 @@ function Home(props) {
         </svg>
       );
 
-    return <>
-        <SvgBackground/>
+    return <div class="App">
+        <SvgBackground class="App"/>
         <div className="flex flex-right width-100 bottom-125">
             <div className="width-50">
                 <h1>Adam Wolfman</h1>
-                <h2>Developer | Success Engineer</h2>
+                <h2>Developer | Success Engineer</h2>                
+                <Legend></Legend>
             </div>
         </div>
         
-    </>
+    </div>
 }
 
 
-export default Home;
+export default Index;
